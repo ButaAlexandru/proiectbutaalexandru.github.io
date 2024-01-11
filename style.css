@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;  
+}
+body {
+    background-color: rgb(31, 36, 45);
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50vh;
+    background: #1f242d; 
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+p {
+    font-size: 20px;
+    color: white;
+    font-weight: auto;
+    position: relative;
+
+}
+.sec-1 h1 {
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    margin-top: 5pc;
+}
+.sec-1 p {
+    font-size: 20px;
+    font-weight: auto;
+    position: relative;
+}
+.sec-2 h1 {
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+.sec-2 p {
+    font-size: 14px;
+    font-weight: auto;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.sec-3 h1 {
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+.sec-3 p {
+    font-size: 15px;
+    font-weight: auto;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+}
+.sec-4 h1 {
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+.sec-4 p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: auto;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+}
+
+section .animate {
+    opacity: 0;
+    transition: 1s;
+    filter: blur(5px);
+    scroll-snap-type: x mandatory;
+}
+section.show-animate .animate {
+    opacity: 1;
+    filter: blur(0);
+    scroll-snap-type: x mandatory;
+    display: block;
+
+}
+.sec-1 .animate {
+    transform: translateX(-100%);
+}
+.sec-1.show-animate .animate {
+    transform: translateX(0);
+}
+.sec-2 .showRight-animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #1f242d;
+    transition: 1s;
+    transition-delay: calc(.2s * var(--i));
+    scroll-snap-type: x mandatory;
+}
+.sec-2.show-animate .showRight-animate {
+    width: 0;
+    display: block;
+
+}
+.sec-2 p {
+    color: white;
+}
+.sec-3 .animate {
+    transform: scale(.7);
+    display: block;
+
+}
+.sec-3.show-animate .animate {
+    transform: scale(1);
+    display: block;
+}
+.sec-4 .showRight-animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #1f242d;
+    transition: 1s;
+    transition-delay: calc(.2s * var(--i));
+}
+.sec-4.show-animate .showRight-animate {
+    width: 0;
+    display: block;
+    text-align: center;
+
+}
+.sec-4 p {
+    color: white;
+    font-size: 15px;
+    display: block;
+
+}
+.sec-4 h1 {
+    color: white;
+    font-size: 23px;
+}
+.ahref {
+    color: white;
+}
+a:hover {
+    color: red;
+    font-size: 20px;
+}
+.sec-3 {
+    text-align: justify;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sec-2 {
+    text-align: justify;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sec-4 {
+    text-align: justify;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
